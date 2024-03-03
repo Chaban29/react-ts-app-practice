@@ -6,16 +6,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 20px;
 }
 
 .post {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
-  border: 3px solid #313239;
-  border-radius: 12px;
   & .post__content {
     display: flex;
     flex-direction: column;
@@ -24,6 +21,15 @@ body {
       font-weight: 700;
     }
   }
+}
+
+.post__itemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid #313239;
+  border-radius: 12px;
 }
 
 .post__buttons > .post__button {
