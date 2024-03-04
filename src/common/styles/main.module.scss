@@ -40,4 +40,11 @@ body {
   border-radius: 10px;
   font-weight: 600;
   font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

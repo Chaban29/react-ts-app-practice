@@ -1,10 +1,15 @@
 import { FC } from 'react';
-import { PostItem } from './PostItem';
+import { PostItem } from './PostItem/PostItem';
 
 const Posts: FC = (): JSX.Element => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      <PostItem />
+    <div className='posts'>
+      <PostItem
+        title='JavaScript'
+        id={1}
+        buttonText=' Delete'
+        body='JavaScript is programming language'
+      />
     </div>
   );
 };
